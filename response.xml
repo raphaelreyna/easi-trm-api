@@ -1,0 +1,180 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetReportResponse xmlns="http://tempuri.org/">
+      <GetReportResult xmlns:a="http://schemas.datacontract.org/2004/07/EasiAPI" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:AreaCount>45</a:AreaCount>
+        <a:AreaCount2>-1</a:AreaCount2>
+        <a:AreaCount3>-1</a:AreaCount3>
+        <a:BlockGroupCode/>
+        <a:BlockGroupCount>45</a:BlockGroupCount>
+        <a:BusinessOnly>0</a:BusinessOnly>
+        <a:CBSA/>
+        <a:CBSACode/>
+        <a:CensusTractCode/>
+        <a:City/>
+        <a:CityCode/>
+        <a:County/>
+        <a:DatasetType>Census</a:DatasetType>
+        <a:DatasetYear>0</a:DatasetYear>
+        <a:DominantProfile/>
+        <a:FIPS/>
+        <a:FeatureType>Ring</a:FeatureType>
+        <a:Fields>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Population (4/1/2010)</a:EasiDescription>
+            <a:EasiName>POP10</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>67,697</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Households (4/1/2010)</a:EasiDescription>
+            <a:EasiName>HH10</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>27,695</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Population, Median Age</a:EasiDescription>
+            <a:EasiName>MEDAGE</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>34.8</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Household Income, Median ($)</a:EasiDescription>
+            <a:EasiName>MEDHHINC</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>87,110</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>White Population, Alone</a:EasiDescription>
+            <a:EasiName>WHPOPA</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>40,600</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Black Population, Alone</a:EasiDescription>
+            <a:EasiName>BLPOPA</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>1,559</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Asian Population, Alone</a:EasiDescription>
+            <a:EasiName>ASPOPA</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>20,170</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Hispanic Population</a:EasiDescription>
+            <a:EasiName>HISPPOP</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>5,835</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Housing, Owner Occupied</a:EasiDescription>
+            <a:EasiName>OOCCHH</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>14,190</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Housing, Renter Occupied</a:EasiDescription>
+            <a:EasiName>ROCCHH</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>13,505</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+          <a:EasiAPIReport.FieldData>
+            <a:EasiDescription>Housing, Vacant Units</a:EasiDescription>
+            <a:EasiName>VACUNIT</a:EasiName>
+            <a:EasiPercent/>
+            <a:EasiRank/>
+            <a:EasiScore/>
+            <a:EasiValue>1,667</a:EasiValue>
+            <a:EasiValue2/>
+            <a:EasiValue3/>
+            <a:Growth/>
+            <a:GrowthForecast/>
+          </a:EasiAPIReport.FieldData>
+        </a:Fields>
+        <a:GeographyType>BlockGroup</a:GeographyType>
+        <a:Instance>prod:0</a:Instance>
+        <a:Latitude>47.64013</a:Latitude>
+        <a:Longitude>-122.129731</a:Longitude>
+        <a:Msg/>
+        <a:MsgID>0</a:MsgID>
+        <a:PO/>
+        <a:Radius>2.5</a:Radius>
+        <a:Radius2>-1</a:Radius2>
+        <a:Radius3>-1</a:Radius3>
+        <a:ReportDescription>Free 2010 Report</a:ReportDescription>
+        <a:ReportID>ARC01</a:ReportID>
+        <a:ReportName>Free 2010 Report</a:ReportName>
+        <a:ReportYear>2010</a:ReportYear>
+        <a:Reserved/>
+        <a:Reserved2/>
+        <a:Reserved3/>
+        <a:State/>
+        <a:UserData/>
+        <a:ZIPCode/>
+      </GetReportResult>
+    </GetReportResponse>
+  </s:Body>
+</s:Envelope>
+
