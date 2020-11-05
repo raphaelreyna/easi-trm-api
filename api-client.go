@@ -59,7 +59,7 @@ func (c *APIClient) GetReportContext(ctx context.Context, request *ReportRequest
 	if err != nil {
 		return nil, "", err
 	}
-	req.Header = h
+	if h != nil { req.Header = h }
 	req.Header.Set("Content-Type", "text/xml; charset=utf-8")
 	req.Header.Set("SOAPAction", "http://tempuri.org/IEasiAPIService/GetReport")
 

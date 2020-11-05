@@ -5,6 +5,7 @@ import (
 	"net/http"
 	trm "github.com/raphaelreyna/easi-trm-api"
 	"os"
+	"encoding/json"
 )
 
 func main() {
@@ -14,8 +15,8 @@ func main() {
 	}()
 
 // Grab developer key from user
-	if len(os.Args) == 1 {
-		fmt.Printf("Usage: %s DEVELOPER_KEY\n" +
+	if len(os.Args) != 3 {
+		fmt.Printf("Usage: %s DEVELOPER_KEY US_ZIP_CODE\n" +
 			"An example application showcasing the Go client for the EASI The Right Move API.\n",
 			os.Args[0],
 		)
@@ -27,16 +28,26 @@ func main() {
 	gr := &trm.ReportRequest{
 		FeatureType:   trm.Quick,
 		GeographyType: trm.ZIPCode,
-		GeographyValue: "91701",
+		GeographyValue: os.Args[2],
 		ReportID:      "AZ001",
 	}
 
-	rr, err := c.GetReport(gr, "", nil)
+	rr, msg, err := c.GetReport(gr, "", nil)
 	if err != nil {
 		panic(err)
+	} else if msg != "" {
+		fmt.Println(msg)
 	}
 
-	for _, field := range rr {
-		fmt.Printf("%+v\n", *field)
+	output := map[string]interface{}{
+		"EasiMessage": msg,
+		"EasiReportFields": rr,
 	}
+
+	data, err := json.MarshalIndent(output, "", "  ")
+	if err != nil { panic(err) }
+
+	os.Stdout.Write(append(data, 10)) // Write to stdout with a newline (0x10)
+	retCode = 0
 }
+
